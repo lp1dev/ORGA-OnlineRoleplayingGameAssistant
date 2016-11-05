@@ -1,0 +1,35 @@
+<pre>
+    {{ vm.gameName }} <button class="btn btn-info" ng-click="vm.saveGame()">Save</button>
+</pre>
+<pre>
+    Available slots : {{ vm.game.slots }}  <button type="button" class="btn btn-success btn-sm" ng-click="vm.addSlot()">+</button>
+</pre>
+
+<pre class="text-center"
+     class="pagination-centered">
+    Attributes :
+    <pre ng-repeat="(name, value) in vm.game.attributes">
+        {{name}} | Min : {{ value.min }} | Max : {{ value.max }} <button class="btn btn-warning"
+                                                                         ng-click="vm.deleteAttribute(name)">delete</button>
+    </pre>
+    Name <input ng-model="vm.attribute.name" type="text" class="form-control"/>
+    Max value <input ng-model="vm.attribute.max" type="text" class="form-control"/>
+    Min value <input ng-model="vm.attribute.min" type="text" class="form-control"/>
+    <button type="button" class="btn btn-success btn-sm" ng-click="vm.addAttribute()">Add</button>
+</pre>
+
+<pre class="text-center"
+     class="pagination-centered">
+Players :
+<pre ng-repeat="(name, value) in vm.game.players">
+    {{ name }}
+    <pre ng-repeat="(attribute_name, attribute_value) in value.attributes"> {{ attribute_name }} <input type="text"
+                                                                                                        ng-model="attribute_value.value"
+                                                                                                        ng-change="vm.editAttribute(attribute_name, attribute_value.value, name)"
+                                                                                                        ng-value="attribute_value.value"/></input>
+    </pre>
+    {{ value.bio }}
+</pre>
+Name <input ng-model="vm.player.name" type="text" class="form-control"/>
+<button type="button" class="btn btn-success btn-sm" ng-click="vm.addPlayer()">Add</button>
+</pre>

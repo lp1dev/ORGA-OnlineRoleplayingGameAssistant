@@ -1,0 +1,30 @@
+{
+  "name": "angular-template",
+  "description": "AngularJS template",
+  "main": "index.html",
+  "authors": [
+    "Jeremie Amsellem (lupin@lp1.eu)"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "AngularJS",
+    "Template",
+    "Starter"
+  ],
+  "homepage": "https://github.com/lupin012345/angular-template",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.5.8",
+    "angular-ui": "^0.4.0",
+    "angular-animate": "^1.5.8",
+    "angular-touch": "^1.5.8",
+    "bootstrap-css": "^3.3.6",
+    "angular-bootstrap": "^2.2.0"
+  }
+}

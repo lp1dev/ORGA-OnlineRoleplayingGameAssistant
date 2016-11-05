@@ -60,6 +60,16 @@ def route_post_game_player_attribute(name, password, player, attribute, value):
 def route():
     return "Welcome on ORGA"
 
+@app.after_request
+def after_request(response):
+    response.headers.add("Access-Control-Allow-Credentials", "true")
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add("Access-Control-Allow-Methods", "POST, GET, PUT, OPTIONS, PATCH, DELETE")
+    response.headers.add('Access-Control-Allow-Headers',"Origin, X-Requested-With, Content-Type, Accept, Authorization")
+    response.headers.add('Content-Type','application/json')
+    response.data = response.data.decode("unicode_escape").encode("UTF-8")
+    return response
+
 def main():
     load_game()
     app.run(host=config['host'], port=config['port'], threaded=True)
