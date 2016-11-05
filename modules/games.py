@@ -32,7 +32,8 @@ def put_game(name, password):
         "password": md5(password),
         "slots": 1,
         "attributes": {},
-        "players": {}
+        "players": {},
+        "points": 350
     }
     if name not in _games.keys():
         _games[name] = game

@@ -23,17 +23,28 @@
     vm.deleteAttribute = deleteAttribute
     vm.addPlayer = addPlayer
     vm.editAttribute = editAttribute
+    vm.getTotalPoints = getTotalPoints
     vm.saveGame = saveGame
     loadData()
 
     //
 
-    function onError(request){
+    function onError (request) {
       if (undefined !== request.data)
         alert(request.data.error);
     }
 
-    function saveGame(){
+    function getTotalPoints (player) {
+      var total = 0;
+      angular.forEach(player.attributes, function (attribute) {
+        if (undefined !== attribute.value && attribute.value.length > 0) {
+          total += parseInt(attribute.value, 0);
+        }
+      });
+      return total
+    }
+
+    function saveGame () {
       console.log("saving...")
       $http.post(API_URL + "/games/save")
         .then(function (request) {
@@ -44,15 +55,17 @@
 
     function editAttribute (name, value, playerName) {
       console.log(name, value);
-      $http.post(API_URL + '/game/' + vm.gameName + '/' + vm.password + '/player/' + playerName +
-      '/attribute/' + name + '/' + value)
-        .then(function (request) {
-          vm.game = request.data;
-        })
-        .catch(onError);
+      if (value.length > 0) {
+        $http.post(API_URL + '/game/' + vm.gameName + '/' + vm.password + '/player/' + playerName +
+          '/attribute/' + name + '/' + value)
+          .then(function (request) {
+            vm.game = request.data;
+          })
+          .catch(onError);
+      }
     }
 
-    function addPlayer() {
+    function addPlayer () {
       $http.put(API_URL + '/game/' + vm.gameName + '/' + vm.password + '/player/' + vm.player.name)
         .then(function (request) {
           vm.game = request.data;
@@ -71,8 +84,8 @@
 
     function deleteAttribute (attribute) {
       $http.delete(API_URL + "/game/" + vm.gameName + "/" + vm.password + "/attribute/" +
-      attribute)
-        .then(function (request){
+        attribute)
+        .then(function (request) {
           loadData();
         })
         .catch(onError);

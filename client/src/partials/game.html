@@ -23,12 +23,13 @@
 Players :
 <pre ng-repeat="(name, value) in vm.game.players">
     {{ name }}
+    {{ vm.getTotalPoints(value)}}/{{ vm.game.points }} points
     <pre ng-repeat="(attribute_name, attribute_value) in value.attributes"> {{ attribute_name }} <input type="text"
                                                                                                         ng-model="attribute_value.value"
                                                                                                         ng-change="vm.editAttribute(attribute_name, attribute_value.value, name)"
                                                                                                         ng-value="attribute_value.value"/></input>
     </pre>
-    {{ value.bio }}
+    <!--{{ value.bio }}-->
 </pre>
 Name <input ng-model="vm.player.name" type="text" class="form-control"/>
 <button type="button" class="btn btn-success btn-sm" ng-click="vm.addPlayer()">Add</button>
