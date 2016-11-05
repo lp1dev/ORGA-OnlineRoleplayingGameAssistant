@@ -22,6 +22,7 @@
      class="pagination-centered">
 Players :
 <pre ng-repeat="(name, value) in vm.game.players">
+    <button ng-click="vm.openPlayerView(name)" class="btn btn-info">Open</button>
     {{ name }}
     {{ vm.getTotalPoints(value)}}/{{ vm.game.points }} points
     <pre ng-repeat="(attribute_name, attribute_value) in value.attributes"> {{ attribute_name }} <input type="text"

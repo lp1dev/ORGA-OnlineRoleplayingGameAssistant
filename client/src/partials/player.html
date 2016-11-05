@@ -1,0 +1,9 @@
+<pre>
+    {{ vm.gameName}}
+</pre>
+<pre>
+    {{ vm.playerName }}
+    <pre ng-repeat="(attribute_name, attribute) in vm.player.attributes">
+        {{attribute_name}} [{{attribute.value || 0}}/{{attribute.max}}]
+    </pre>
+</pre>

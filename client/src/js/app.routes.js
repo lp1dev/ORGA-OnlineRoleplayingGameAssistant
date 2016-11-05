@@ -28,5 +28,12 @@
         controller: 'gameController',
         controllerAs: 'vm'
       })
+      .when('/player',
+        {
+          templateUrl: 'partials/player.html',
+          controller: 'playerController',
+          controllerAs: 'vm'
+        }
+      )
   }
 })()

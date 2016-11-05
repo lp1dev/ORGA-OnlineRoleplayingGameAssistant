@@ -25,9 +25,14 @@
     vm.editAttribute = editAttribute
     vm.getTotalPoints = getTotalPoints
     vm.saveGame = saveGame
+    vm.openPlayerView = openPlayerView
     loadData()
 
     //
+
+    function openPlayerView (player) {
+      $location.path("/player/").search({game: vm.gameName, player:player});
+    }
 
     function onError (request) {
       if (undefined !== request.data)
