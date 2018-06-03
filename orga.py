@@ -1,4 +1,4 @@
-#!/bin/python
+#!/bin/env python
 
 from flask import Flask, jsonify
 from config import config
@@ -58,7 +58,7 @@ def route_post_game_player_attribute(name, password, player, attribute, value):
 
 @app.route("/", methods=["GET"])
 def route():
-    return "Welcome on ORGA"
+    return {"message": "Welcome to ORGA"}
 
 @app.after_request
 def after_request(response):

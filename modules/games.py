@@ -53,7 +53,7 @@ def put_game_player(name, password, player_name):
     game, code = can_edit_game(name, password)
     if code == 200:
         player = {
-            "attributes": game['attributes'],
+            "attributes": game['attributes'].copy(),
             "bio": "Fill your biography..."
         }
         if game['slots'] > len(game['players']) + 1:

@@ -1,0 +1,276 @@
+{
+	"2044": {
+		"password": "d8330f857a17c53d217014ee776bfd50",
+		"slots": 1,
+		"attributes": {
+			"Charisme": {
+				"min": "0",
+				"max": "10",
+				"value": "10"
+			},
+			"Constitution": {
+				"min": "0",
+				"max": "10",
+				"value": "0"
+			},
+			"Force": {
+				"min": "0",
+				"max": "10",
+				"value": "10"
+			},
+			"Perception": {
+				"min": "0",
+				"max": "10",
+				"value": "0"
+			},
+			"Éducation": {
+				"min": "0",
+				"max": "10",
+				"value": "0"
+			},
+			"Dextérité": {
+				"min": "0",
+				"max": "10",
+				"value": "0"
+			},
+			"Special": {
+				"min": "0",
+				"max": "10",
+				"value": "5"
+			},
+      "Energie": {
+						"value": "10",
+						"min": "0",
+						"max": "20"
+			},
+			"Chance": {
+				"value": "0",
+				"min": "0",
+				"max": "10"
+			 }
+		},
+		"players": {
+			"Hakim Oungola": {
+				"attributes": {
+					"Charisme": {
+						"min": "0",
+						"max": "10",
+						"value": "10"
+					},
+					"Constitution": {
+						"min": "0",
+						"max": "10",
+						"value": "0"
+					},
+					"Force": {
+						"min": "0",
+						"max": "10",
+						"value": "10"
+					},
+					"Perception": {
+						"min": "0",
+						"max": "10",
+						"value": "0"
+					},
+					"Éducation": {
+						"min": "0",
+						"max": "10",
+						"value": "0"
+					},
+					"Dextérité": {
+						"min": "0",
+						"max": "10",
+						"value": "0"
+					},
+					"Special": {
+						"min": "0",
+						"max": "10",
+						"value": "5"
+					},
+					"HP": {
+						"value": "10",
+						"min": "0",
+						"max": "10"
+					},
+					"Energie": {
+						"value": "10",
+						"min": "0",
+						"max": "20"
+					 },
+					 "Chance": {
+						"value": "0",
+						"min": "0",
+						"max": "10"
+           }         
+        },
+				"bio": "Flic 37 ans, noir. Marié, 2 filles de 11 et 8 ans. Il a grandi dans les quartiers chauds, il a failli mal tourné. Proche de la population des quartiers populaires, il connaît très bien la banlieue. Pour lui les petits délinquants sont des victimes du système et il cherche à faire tomber les gros caïds. Il a beaucoup de contact/d'indic. Il est impulsif, violent mais tente de rester juste, pour lui la fin justifie les moyens."
+			},
+			"Denis": {
+				"attributes": {
+					"Charisme": {
+						"min": "0",
+						"max": "10",
+						"value": "5"
+					},
+					"Constitution": {
+						"min": "0",
+						"max": "10",
+						"value": "3"
+					},
+					"Force": {
+						"min": "0",
+						"max": "10",
+						"value": "2"
+					},
+					"Perception": {
+						"min": "0",
+						"max": "10",
+						"value": "5"
+					},
+					"Éducation": {
+						"min": "0",
+						"max": "10",
+						"value": "1"
+					},
+					"Dextérité": {
+						"min": "0",
+						"max": "10",
+						"value": "3"
+					},
+					"Special": {
+						"min": "0",
+						"max": "10",
+						"value": "6"
+					},
+					"HP": {
+						"value": "10",
+						"min": "0",
+						"max": "10"
+					},
+          "Energie": {
+						"value": "13",
+						"min": "0",
+						"max": "20"
+					},
+					"Chance": {
+						"value": "0",
+						"min": "0",
+						"max": "10"
+           }
+				},
+				"bio": "Né dans un des recoins les plus pauvre et sale de Paris, a été séparé très tôt de sa famille et à dû apprendre à survivre par lui-même. S'est spécialisé dans le vol, réparation et le recel d'armes, de drogue, de documents d'identité et d'équipement éléctronique en tout genre. Solitaire, mais accepte de travailler pour tout et n'importe qui sans poser de question du moment qu'il y trouve son compte. Il déteste les scientifiques, médecins et autres membres du gouvernement qu'il juge responsable de sa condition, mais n'éprouve cependant peu ou pas de compassion pour les autres victimes de la société."
+			},
+			"Maximilien": {
+				"attributes": {
+					"Charisme": {
+						"min": "0",
+						"max": "10",
+						"value": "6"
+					},
+					"Constitution": {
+						"min": "0",
+						"max": "10",
+						"value": "3"
+					},
+					"Force": {
+						"min": "0",
+						"max": "10",
+						"value": "0"
+					},
+					"Perception": {
+						"min": "0",
+						"max": "10",
+						"value": "5"
+					},
+					"Éducation": {
+						"min": "0",
+						"max": "10",
+						"value": "4"
+					},
+					"Dextérité": {
+						"min": "0",
+						"max": "10",
+						"value": "2"
+					},
+					"Special": {
+						"min": "0",
+						"max": "10",
+						"value": "5"
+					},
+					"HP": {
+						"value": "10",
+						"min": "0",
+						"max": "10"
+					},
+  					"Energie": {
+						"value": "13",
+						"min": "0",
+						"max": "20"
+					},
+						"Chance": {
+						"value": "0",
+						"min": "0",
+						"max": "10"
+           }   
+				},
+				"bio": "Maximilien grand cadre dans la nouvelle entreprise BodyToYou spécialisée dans la vente de corps à tout faire, d'esclaves diraient certains.Sans scrupules il amasse une fortune en vendant ces corps a tous types de clients plus ou moins recommandables.Il a réussi à passer illégalement le mur peu de temps après sa construction et s'est créé une place dans la société parisienne qu'il s'est juré de détruire. En effet il est le seul de tous ses proches à avoir réussi à passer le mur. Sa famille et ses amis ayant été repoussé et il n'en a plus aucune nouvelle..."
+			},
+			"Paul Seldon": {
+				"attributes": {
+					"Charisme": {
+						"min": "0",
+						"max": "10",
+						"value": "4"
+					},
+					"Constitution": {
+						"min": "0",
+						"max": "10",
+						"value": "2"
+					},
+					"Force": {
+						"min": "0",
+						"max": "10",
+						"value": "2"
+					},
+					"Perception": {
+						"min": "0",
+						"max": "10",
+						"value": "4"
+					},
+					"Éducation": {
+						"min": "0",
+						"max": "10",
+						"value": "3"
+					},
+					"Dextérité": {
+						"min": "0",
+						"max": "10",
+						"value": "4"
+					},
+					"Special": {
+						"min": "0",
+						"max": "10",
+						"value": "6"
+					},
+					"HP": {
+						"value": "10",
+						"min": "0",
+						"max": "10"
+					},
+  					"Energie": {
+						"value": "12",
+						"min": "0",
+						"max": "20"
+					},
+					 "Chance": {
+						"value": "0",
+						"min": "0",
+						"max": "10"
+           }   
+				},
+				"bio": "Paul Seldon est un ancien roboticien reconverti dans un grand groupe biomécanique. La biomécanique propose quelques jobs qui rapportent suffisamment pour éviter de se retrouver reconditionné pour les classes supérieures sans pour autant permettre de rejoindre les beaux quartiers. Sa famille est restée hors de Paris et la situation de Paris sur le plan extérieure n'est pas vraiment idéale pour communiquer."
+			}
+		},
+		"points": 25
+	}
+}
